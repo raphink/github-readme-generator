@@ -15,19 +15,19 @@ GitHubReadmeGenerator::RakeTask.new :readme do |config|
     :puppetforge_version => {
       :badge   => :puppetforge,
       :type    => 'v',
-      :user    => 'raphink',    # Dynamic from metadata.json
-      :project => 'freeradius', # Dynamic from metadata.json
+      :user    => 'raphink',    # Dynamic from metadata.json?
+      :project => 'freeradius', # Dynamic from metadata.json?
     },
     :puppetforge_downloads => {
       :badge   => :puppetforge,
       :type    => 'dt',
-      :user    => 'raphink',    # Dynamic from metadata.json
-      :project => 'freeradius', # Dynamic from metadata.json
+      :user    => 'raphink',    # Dynamic from metadata.json?
+      :project => 'freeradius', # Dynamic from metadata.json?
     },
     :travis => {
       :badge   => :travis,
       :user    => 'raphink', # Dynamic from git
-      :project => 'puppet-freeradius', # Dynamic from git
+      :project => 'puppet-freeradius', # Dynamic from git?
     },
   }
 end
