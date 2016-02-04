@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name               = "github_readme_generator"
-  spec.version            = '0.1.1'
+  spec.version            = '0.1.2'
 
   spec.required_ruby_version     = ">= 1.9.3"
   spec.authors = ["Raphaël Pinson"]
