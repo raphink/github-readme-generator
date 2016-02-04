@@ -33,5 +33,8 @@ GitHubReadmeGenerator::RakeTask.new :readme do |config|
       :project => 'puppet-freeradius', # Dynamic from git?
     },
   }
+
+It's also possible to generate documentation for a puppet-module that's not inside the root of your Rakefile. This can be done by setting a `MODULE_PATH` environment variable.
+
 end
 ```
