@@ -1,6 +1,9 @@
 Github README Generator
 =======================
 
+[![Gem Version](https://img.shields.io/gem/v/github_readme_generator.svg)](https://rubygems.org/gems/github_readme_generator)
+[![Gem Downloads](https://img.shields.io/gem/dt/github_readme_generator.svg)](https://rubygems.org/gems/github_readme_generator)
+
 `github-readme-generator` lets you generate a `README.md` file simply.
 
 # Example
