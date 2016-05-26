@@ -32,6 +32,14 @@ GitHubReadmeGenerator::RakeTask.new :readme do |config|
       :user    => 'raphink', # Dynamic from git
       :project => 'puppet-freeradius', # Dynamic from git?
     },
+    :jenkins => {
+      :badge        => :jenkins,
+      :jenkins_url  => 'https://myjenkinsinstance.com/job/puppet-freeradius'
+    },
   }
 end
 ```
+
+## Dependencies
+
+It's required to install the 'Embeddable Build Status'-plugin in Jenkins if you want to embed Jenkins' build badges.
