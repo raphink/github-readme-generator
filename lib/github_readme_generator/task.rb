@@ -56,6 +56,11 @@ module GitHubReadmeGenerator
             img = "https://img.shields.io/travis/#{v[:user]}/#{v[:project]}.svg"
             link = "https://travis-ci.org/#{v[:user]}/#{v[:project]}"
             out << "[![#{title}](#{img})](#{link})\n"
+          when :jenkins
+            title = v[:title] || 'Build Status'
+            img = "#{v[:jenkins_url]}/badge/icon"
+            link = "#{v[:jenkins_url]}"
+            out << "[![#{title}](#{img})](#{link})\n"
           else
             fail "Unknown badge type '#{v[:badge]}'"
           end
