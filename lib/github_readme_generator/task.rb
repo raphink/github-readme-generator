@@ -66,14 +66,15 @@ module GitHubReadmeGenerator
           end
         end
 
+        module_path = ENV['MODULE_PATH'] || './'
         # Usage from examples
         out << "\n## Usage\n\n"
-        Dir.glob('examples/*').each do |e|
+        Dir.glob("#{module_path}examples/*").each do |e|
           content = File.read(e).gsub(/^#\s*/, '')
           out << "\n#{content}\n"
         end
 
-        File.open('README.md', 'w').puts(out)
+        File.open("#{module_path}README.md", 'w').puts(out)
       end
     end
   end
